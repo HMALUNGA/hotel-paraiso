@@ -1,0 +1,99 @@
+/*Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: sans-serif,verdana,tahoma;
+	box-sizing: border-box;
+	color: #fff;
+}
+ul{list-style: none;}
+li{opacity: 1; color: white;}
+li:hover{opacity: .5;cursor: pointer;}
+a{text-decoration: none; background-color: orange;}
+a:hover{background-color: indianred;}
+
+
+/*header*/
+#corpo{width: 100vw; position: relative;}
+#corpo header{width: 100vw;background-color: orange;height: 15vh; display: flex; flex-direction: row; justify-content: space-around; align-items: center; position:fixed;}
+#corpo header h1{color: white; text-shadow: 1px 1px #000; font-size: 3rem;}
+#corpo header nav ul{display: flex; flex-direction: row; justify-content: center;align-items: center;}
+#corpo header nav ul li{margin-right: 50px;}
+
+@media ( max-width:1000px){
+   #corpo header{flex-direction: column;}
+   #corpo header nav{padding: 10px;}
+}
+/*hero*/
+#hero{background-image: url(img/cida.jpg);background-repeat: no-repeat;background-size: cover;min-height: 100vh; display: flex;justify-content: center;align-items: center; flex-direction: column;}
+#hero h2,#hero p,#hero a{padding-bottom: 20px; text-align: center;}
+#hero h2,#hero p{font-size: 3.5rem;text-shadow: 1px 1px #000;}
+#hero p{font-size: 2.8rem;}
+#hero a{padding: 20px 50px;border-radius: 1rem; text-transform: uppercase;}
+
+@media (max-width:1000px){
+	#hero h2{font-size: 2.8rem;}
+	#hero p{ font-size:2rem; }
+}
+
+#paisagem{
+	display: flex; flex-direction: column; justify-content: center; align-items: center;margin: 40px 0;
+}
+#paisagem h2,#paisagem p{color: orangered; margin-bottom: 20px; text-align: center;}
+#paisagem h2{font-size: 2.2rem;}
+#paisagem p{font-size: 2rem;}
+#paisagem hr{width: 30vw;border: none; height: 2px; background-color: orange; margin-top: 30px;}
+
+@media (max-width:1000px){
+	#paisagem h2{font-size: 2rem;}
+	#paisagem p{font-size: 1.8rem;}
+	#paisagem hr{width: 50vw;}
+}
+
+#fotos{display: flex; flex-direction:row; flex-wrap:wrap;justify-content:center; margin: 40px 0; width: 100vw;}
+#fotos li{ height:300px;background-position:center;background-size:100%;background-repeat:no-repeat;background-clip:content-box;border-radius:2rem;padding:10px; }
+#fotos .pequeno{flex-basis: 35%;}
+#fotos .grande{flex-basis: 55%;}
+#fotos .pequeno1{flex-basis: 55%;}
+#fotos .grande1{flex-basis: 35%;}
+
+@media (max-width:1000px){
+	#fotos .pequeno,#fotos .pequeno1,#fotos .grande,#fotos .grande1{flex-basis: 100%;}
+}
+#informacao{background-color: darkgreen; text-align:center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#informacao h3{color: #fff;font-size: 2.2rem;margin: 50px 0 30px 0;text-transform: capitalize;}
+#informacao p{margin-bottom: 30px;}
+#informacao ul li{ padding:0 3rem; }
+#informacao hr{ width:30%;height:.1vh;border:none;background-color:#fff; margin-bottom: 30px;align-self: center;}
+#informacao ul {display: flex;flex-direction: row; justify-content: space-between;}
+#informacao ul li h3{color: #fff; font-size: 2rem;text-align: center;}
+#informacao ul li p{text-align: center;}
+
+@media (max-width:1000px){
+	#informacao ul{flex-direction: column;}
+}
+
+#newslater{ margin:8vh 0; display:flex;justify-content:center;flex-direction:column;align-items:center; }
+#newslater h3{color: orangered;font-size: 2rem;margin-bottom: 20px;text-align: center;}
+#newslater p{color: darkorange;margin-bottom: 20px; text-align: center;}
+#newslater form{display: flex; flex-direction: row; justify-content: center;align-items: center;}
+#newslater input{ padding:.5rem 10rem; border-radius: 1rem;border: 1px solid #ccc;color: #000;}
+#newslater form  button{cursor:pointer;padding: .5rem 1rem;font-weight: bold;text-transform: uppercase;color: black; border: none;margin-left: 5px;background-color: #999;transition-property: background-color;transition-duration: 1s;transition-timing-function: ease-in-out;transition-delay: .1s;border-radius: .1rem;}
+#newslater form  button:hover{background-color: #777;color: #fff;}
+
+@media (max-width:1000px){
+  #newslater form{flex-direction: column;}
+  #newslater form  input{padding: .5rem 5rem;}
+  #newslater form  button{margin: 15px 0; border-radius: .5rem;}
+}
+footer{
+	width: 100vw;
+	height: 20vh;
+	background-color: #192c03;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer p{ font-size: 1.2rem;}
